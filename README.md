@@ -23,7 +23,7 @@ docker compose up -d --wait postgres
 direnv exec . mise exec -- ./backend/mvnw -f backend/pom.xml spring-boot:run
 ```
 
-In a second terminal, run the following from the repository root and open the local URL printed by Vite:
+In a second terminal, run the following from the repository root, then open [http://localhost:15173](http://localhost:15173):
 
 ```bash
 mise exec -- npm --prefix frontend ci
@@ -39,8 +39,11 @@ Compose reads `.env` directly. The `direnv exec .` commands above and below load
 | `POSTGRES_DB` | Database name (default in the example: `loginguard`) |
 | `POSTGRES_USER` | Database user (default in the example: `loginguard`) |
 | `POSTGRES_PASSWORD` | Password used when PostgreSQL initializes the data volume |
+| `POSTGRES_PORT` | Optional local PostgreSQL host port (defaults to `15432`) |
 
-Spring connects to `localhost:5432`. Compose publishes that port on all host IPv4 interfaces. The named volume preserves data between restarts, including the database credentials set at initialization.
+LoginGuard adds `10000` to the standard ports for local development, using `15432` for PostgreSQL (default `5432`) and `15173` for Vite (default `5173`). This keeps the port numbers recognizable and lets LoginGuard run alongside projects that use the defaults.
+
+Spring and local database clients connect to `localhost:15432` by default. Compose maps that loopback port to `5432` inside the PostgreSQL container. The named volume preserves data between restarts, including the database credentials set at initialization.
 
 ## Development
 
