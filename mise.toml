@@ -1,0 +1,6 @@
+[tools]
+java = "temurin-25"
+node = "26"
+
+[settings]
+lockfile = true

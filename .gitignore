@@ -1,0 +1,51 @@
+# Frontend dependencies and generated output
+**/node_modules/
+**/dist/
+**/coverage/
+**/playwright-report/
+**/test-results/
+*.tsbuildinfo
+
+# Java build output
+**/target/
+*.class
+
+# Local environment and credentials
+.env
+.env.*
+.envrc.*
+.direnv/
+!.env.example
+!.env.*.example
+!.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Terraform local state and plans
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+crash.log
+crash.*.log
+
+# Editor and operating system files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Personal mise overrides
+mise.local.toml
+mise.local.lock
+mise.*.local.toml
+mise.*.local.lock
