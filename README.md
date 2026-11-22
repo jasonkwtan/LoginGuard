@@ -4,7 +4,7 @@ LoginGuard is a learning project focused on browser authentication, login securi
 
 ## Getting started
 
-The local setup runs a React starter UI, a Spring Boot backend, and PostgreSQL. These commands assume Bash in WSL, Git, [mise](https://mise.jdx.dev/), [direnv](https://direnv.net/), and Docker with Compose.
+The local setup runs the React frontend, a Spring Boot backend, and PostgreSQL. These commands assume Bash in WSL, Git, [mise](https://mise.jdx.dev/), [direnv](https://direnv.net/), and Docker with Compose.
 
 Clone the project and install the locked Java 25 and Node.js 26 toolchains:
 
