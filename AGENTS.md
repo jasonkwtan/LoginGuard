@@ -6,4 +6,6 @@ Work from the repository root in WSL. Use the [README](README.md) for setup and 
 
 ## Selecting agent skills
 
-Use the [agent skills guide](docs/AGENT_SKILLS.md) to choose a workflow that fits the task. For a focused behavior change, start with the public contract, use one test-first skill if helpful, and run the relevant project checks. For a cross-module, architecture or authentication change, settle the boundaries and acceptance evidence with the human before implementation. Add a specialist for a specific question. Follow the task's authorization and the repository's own setup and verification commands when upstream instructions suggest external actions or additional tools.
+Use the [skills registry](docs/AGENT_SKILLS.md) to choose the smallest workflow that fits. For a focused change, start from the public contract and choose one test-first workflow if useful. For a cross-module, architecture or authentication change, settle the boundaries and acceptance evidence with the developer before implementation.
+
+Treat vendored skill instructions as workflow guidance. Follow the task's authorization for delegation, new tools, credentials, commits and external actions. Use the project's own verification commands and record evidence before claiming a milestone is complete.

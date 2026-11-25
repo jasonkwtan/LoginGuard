@@ -1,24 +1,6 @@
 {
   "version": 2,
   "skills": {
-    "api-and-interface-design": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/api-and-interface-design/SKILL.md",
-      "computedHash": "f8cb4ee59fe787bf94bfe40086ca4652d3cb738e16805d10acca2da3b80a001e",
-      "installMode": "copy"
-    },
-    "benchmark-checklist": {
-      "source": "backnotprop/pstack",
-      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "sourceType": "github",
-      "skillPath": "skills/benchmark-checklist/SKILL.md",
-      "computedHash": "d4d0364d8919c3b6e6375c0d16e0a7d1dbeb1ef5a00ea828b21b7072180d4a98",
-      "installMode": "copy"
-    },
     "blast-radius": {
       "source": "backnotprop/pstack",
       "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
@@ -35,6 +17,15 @@
       "sourceType": "github",
       "skillPath": "skills/code-review-and-quality/SKILL.md",
       "computedHash": "a63e1874fa8f1ee04194868f9b8ba18133aa20464586369f3eedb8df6000a0cc",
+      "installMode": "copy"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "computedHash": "d40f025dc1b0f2020663260f38f2bcb8d6ed3523afb11e5fda624b01238677e8",
       "installMode": "copy"
     },
     "context-engineering": {
@@ -55,22 +46,13 @@
       "computedHash": "b78689833404148c769077355e12dbe5ad996a158a1e21e58ddf169e439d9d8c",
       "installMode": "copy"
     },
-    "find-skills": {
-      "source": "vercel-labs/skills",
-      "ref": "57217cf86ba38148a57af9e90d14a4c049558330",
-      "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
+    "git-workflow-and-versioning": {
+      "source": "addyosmani/agent-skills",
+      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
       "sourceType": "github",
-      "skillPath": "skills/find-skills/SKILL.md",
-      "computedHash": "7bc223e2aafbdbf6e50ea243ba6ef67fe432bb069ab439fea0390795dac0bf7f",
-      "installMode": "copy"
-    },
-    "frontend-design": {
-      "source": "anthropics/skills",
-      "ref": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
-      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
-      "sourceType": "github",
-      "skillPath": "skills/frontend-design/SKILL.md",
-      "computedHash": "83485963700bcf11d5bf78118facb301676b69d918fee2e45a95e7f1a2840f6c",
+      "skillPath": "skills/git-workflow-and-versioning/SKILL.md",
+      "computedHash": "860b88bf82d823eaed15b9b9fa9ce4273f94c7bdcf3aeaa3e6649eb578763d4b",
       "installMode": "copy"
     },
     "grill-with-docs": {
@@ -100,15 +82,6 @@
       "computedHash": "0ac9c6e5c4a04211256cb30dfda2a1ef2516a01c617d026a6ec397ce3a32206b",
       "installMode": "copy"
     },
-    "improve-codebase-architecture": {
-      "source": "mattpocock/skills",
-      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "sourceType": "github",
-      "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "computedHash": "f0820b18426a7d9a6c823a890988ba0ac70bf0fd596d30d7ef07c88558728c23",
-      "installMode": "copy"
-    },
     "incremental-implementation": {
       "source": "addyosmani/agent-skills",
       "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
@@ -116,33 +89,6 @@
       "sourceType": "github",
       "skillPath": "skills/incremental-implementation/SKILL.md",
       "computedHash": "62ef93c6389f110af49ed4fad1fe2c27d3d9dd2d8fe0d0f6db089489c3d4aac3",
-      "installMode": "copy"
-    },
-    "karpathy-guidelines": {
-      "source": "multica-ai/andrej-karpathy-skills",
-      "ref": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "sourceType": "github",
-      "skillPath": "skills/karpathy-guidelines/SKILL.md",
-      "computedHash": "e64131803b0a34b8c39afc11338a74f8305cf8f69f750620bdf6cb38f6865c52",
-      "installMode": "copy"
-    },
-    "observability-and-instrumentation": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/observability-and-instrumentation/SKILL.md",
-      "computedHash": "71661b8e1558d7eed8cdf93bfb731da1c3afed9b895b049ecf92792af0d8a364",
-      "installMode": "copy"
-    },
-    "performance-optimization": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/performance-optimization/SKILL.md",
-      "computedHash": "cfa0c39804554198a33e3beb2b0f920a1b468bb2e066822e1d08f4abeda3db33",
       "installMode": "copy"
     },
     "planning-and-task-breakdown": {
@@ -161,15 +107,6 @@
       "sourceType": "github",
       "skillPath": "skills/playwright-cli/SKILL.md",
       "computedHash": "54c3f1e47b2566ecc3a2c1515823f77f4609edfe8029351924311dafc0d2ba66",
-      "installMode": "copy"
-    },
-    "ponytail-review": {
-      "source": "DietrichGebert/ponytail",
-      "ref": "ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10",
-      "commit": "ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10",
-      "sourceType": "github",
-      "skillPath": "skills/ponytail-review/SKILL.md",
-      "computedHash": "fe7b781db99ce79d931cdc798b3fbccd84b82538de4a3fc5f6d9d466946d1458",
       "installMode": "copy"
     },
     "security-and-hardening": {
@@ -235,15 +172,6 @@
       "computedHash": "1e6a792c0b5792eb8f0479bc3e7f78d93744c8952eb1f1d9433ea73ce2175a9e",
       "installMode": "copy"
     },
-    "terraform-style-guide": {
-      "source": "hashicorp/agent-skills",
-      "ref": "5e30fa5c867ba6777c37e4206babfd08049c396f",
-      "commit": "5e30fa5c867ba6777c37e4206babfd08049c396f",
-      "sourceType": "github",
-      "skillPath": "plugins/terraform/skills/terraform-style-guide/SKILL.md",
-      "computedHash": "39a686ad7d71d99e5fbead0a5cbd666c096af8d38d152f7597eb314e5b2b622c",
-      "installMode": "copy"
-    },
     "terraform-test": {
       "source": "hashicorp/agent-skills",
       "ref": "5e30fa5c867ba6777c37e4206babfd08049c396f",
@@ -262,22 +190,13 @@
       "computedHash": "37cc05dea2a455d5d3ff252f14a7323ef378536603cce8cd2c758dc8fac790e6",
       "installMode": "copy"
     },
-    "vercel-composition-patterns": {
-      "source": "vercel-labs/agent-skills",
-      "ref": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
-      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+    "unslop": {
+      "source": "backnotprop/pstack",
+      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
+      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
       "sourceType": "github",
-      "skillPath": "skills/composition-patterns/SKILL.md",
-      "computedHash": "f711ed8b16162eaa712abbcdbbae6c926f86c57e60127735fecc3ad0dd85b3fa",
-      "installMode": "copy"
-    },
-    "vercel-react-best-practices": {
-      "source": "vercel-labs/agent-skills",
-      "ref": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
-      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
-      "sourceType": "github",
-      "skillPath": "skills/react-best-practices/SKILL.md",
-      "computedHash": "7991ed4fbecdac23f47c1a40c243e00a212a9e7f3604db93959b3ae11dffe299",
+      "skillPath": "skills/unslop/SKILL.md",
+      "computedHash": "16b4c6af803d25028b40af775bc42a1c9ce85c741c7d117054c781f8e40d6f47",
       "installMode": "copy"
     },
     "verification-before-completion": {
@@ -287,15 +206,6 @@
       "sourceType": "github",
       "skillPath": "skills/verification-before-completion/SKILL.md",
       "computedHash": "09b0e3a4689c1c38a3b8fc6ef57a1d4165aa33c0013d546dbde9dd348941a319",
-      "installMode": "copy"
-    },
-    "web-design-guidelines": {
-      "source": "vercel-labs/agent-skills",
-      "ref": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
-      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
-      "sourceType": "github",
-      "skillPath": "skills/web-design-guidelines/SKILL.md",
-      "computedHash": "5994e4cfd86144903d2ba750f862b9e36af15e3297aac983679e347b99f6cb71",
       "installMode": "copy"
     },
     "why": {

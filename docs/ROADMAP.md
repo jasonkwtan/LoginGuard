@@ -6,7 +6,7 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 
 ## Current handoff
 
-**Foundation starting point.** WSL `main` is at `000543e` with the React/Vite landing page, Spring Boot context test and [PostgreSQL migration test](../backend/src/test/java/com/loginguard/loginguard/DatabaseMigrationTests.java).
+**Foundation starting point.** The application baseline at `000543e` has the React/Vite landing page, Spring Boot context test and [PostgreSQL migration test](../backend/src/test/java/com/loginguard/loginguard/DatabaseMigrationTests.java).
 
 **Verification.** The 25 November checkout review confirmed placeholders under `.github/workflows/` and `infrastructure/`. A passing GitHub Actions run is pending.
 
@@ -15,6 +15,10 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 **Release decision.** The [first public release](#first-public-release) ships one preset in one AWS region. Fast ZIP downloads, effective download rate limiting, and a verified starter upgrade and rollback are release gates.
 
 **Maintaining the handoff.** At the start of a task, compare this section with the working tree and recent checks. When work changes the milestone status, record the observed result, the check or decision that supports it, and the next unfinished step here. Keep setup commands in the README and link detailed decisions or experiments from the relevant milestone.
+
+## Engineering practices
+
+Use the [skills registry](AGENT_SKILLS.md) for a repeatable workflow from design and acceptance criteria through verification and review. Keep the developer's decisions, changes and evidence visible in each PR. The long-term software factory goal is to automate steps once the manual workflow is repeatable and has clear inputs, checks and approval points. Start with repository guidance, pinned skills and documented checks.
 
 ## Delivery milestones
 
