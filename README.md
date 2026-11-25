@@ -1,6 +1,8 @@
 # LoginGuard
 
-LoginGuard is a learning project focused on browser authentication, login security, and bot protection with Spring Boot and React.
+LoginGuard starts as a Spring Boot security lab and grows into a platform that generates runnable Spring Boot starter apps. The first public release serves the Sessions + Rate limiting starter and supports validated custom generation in one AWS region. JWT-protected APIs and company SSO follow.
+
+The current scaffold includes a React landing page, a Spring Boot backend and a PostgreSQL migration.
 
 ## Getting started
 
@@ -62,3 +64,7 @@ Stop the frontend and backend with Ctrl+C in their terminals. Run `docker compos
 The React 19 and TypeScript frontend lives in [frontend/](frontend/). The Java 25 backend in [backend/](backend/) uses Spring Boot 4.2, Spring Security, and Spring Data JPA. PostgreSQL 17 stores application data. Flyway applies [versioned migrations](backend/src/main/resources/db/migration/), and Hibernate validates entity mappings at startup.
 
 The design starts with a modular monolith. The first browser authentication flow will use server-side sessions and CSRF protection.
+
+## Project plan
+
+Use the [roadmap](docs/ROADMAP.md) for the delivery milestones, authorization contract, starter release checks and Runbook Search adoption plan. The [API protection exercise](docs/API-PROTECTION.md) covers single-process limits, Redis, AWS WAF and DDoS readiness. Start with the [current handoff](docs/ROADMAP.md#current-handoff) for the latest verified state and next task.
