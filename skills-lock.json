@@ -1,221 +1,90 @@
 {
   "version": 2,
   "skills": {
-    "blast-radius": {
-      "source": "backnotprop/pstack",
-      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "sourceType": "github",
-      "skillPath": "skills/blast-radius/SKILL.md",
-      "computedHash": "0757c44120a174426d00dc1d5f30dcc0c69b13e39fa406038b427aad090a915e",
-      "installMode": "copy"
-    },
-    "code-review-and-quality": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/code-review-and-quality/SKILL.md",
-      "computedHash": "a63e1874fa8f1ee04194868f9b8ba18133aa20464586369f3eedb8df6000a0cc",
-      "installMode": "copy"
-    },
-    "codebase-design": {
+    "code-review": {
       "source": "mattpocock/skills",
-      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
-      "skillPath": "skills/engineering/codebase-design/SKILL.md",
-      "computedHash": "d40f025dc1b0f2020663260f38f2bcb8d6ed3523afb11e5fda624b01238677e8",
-      "installMode": "copy"
+      "skillPath": "skills/engineering/code-review/SKILL.md",
+      "computedHash": "ce86b40a3d1648a0018b712f0c70704e6c2316b2a9b9e915ab116916a31273dc"
     },
-    "context-engineering": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+    "create-verification-skill": {
+      "source": "backnotprop/pstack",
+      "commit": "c81f1bf680803f9e3f0cade6adb62593f43fb61f",
       "sourceType": "github",
-      "skillPath": "skills/context-engineering/SKILL.md",
-      "computedHash": "0b9e3d177ec4e42d9b39c76ef8ee751f88cce40e3879c785a1a8c6eeabc6119d",
-      "installMode": "copy"
+      "skillPath": "skills/create-verification-skill/SKILL.md",
+      "computedHash": "8922d9f88a8376171d1c267f9a5e39e8e02e645f73db2a47d634d1502e53807b"
+    },
+    "diagnosing-bugs": {
+      "source": "mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "computedHash": "87c78ae966e591f9ceb177789cc5cc9de69277cd26679ffd36ca5300f430d513"
     },
     "domain-modeling": {
       "source": "mattpocock/skills",
-      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
       "skillPath": "skills/engineering/domain-modeling/SKILL.md",
-      "computedHash": "b78689833404148c769077355e12dbe5ad996a158a1e21e58ddf169e439d9d8c",
-      "installMode": "copy"
-    },
-    "git-workflow-and-versioning": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/git-workflow-and-versioning/SKILL.md",
-      "computedHash": "860b88bf82d823eaed15b9b9fa9ce4273f94c7bdcf3aeaa3e6649eb578763d4b",
-      "installMode": "copy"
+      "computedHash": "7d4453f798d7785c945972abe0871493caf884fa3ee82725cc71e783de6176ea"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",
-      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
       "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
-      "computedHash": "02e258f41d210f9b2e7cce9faf62b3c59e8fcebe5d2736369c3cd07d471324f8",
-      "installMode": "copy"
+      "computedHash": "02e258f41d210f9b2e7cce9faf62b3c59e8fcebe5d2736369c3cd07d471324f8"
     },
     "grilling": {
       "source": "mattpocock/skills",
-      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
       "skillPath": "skills/productivity/grilling/SKILL.md",
-      "computedHash": "485451958784497cd4c4dbea13cb5bbb579da58fac0d0e45f3bcb310fab68ac7",
-      "installMode": "copy"
+      "computedHash": "485451958784497cd4c4dbea13cb5bbb579da58fac0d0e45f3bcb310fab68ac7"
     },
-    "how": {
+    "maintain-verification-skill": {
       "source": "backnotprop/pstack",
-      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
+      "commit": "c81f1bf680803f9e3f0cade6adb62593f43fb61f",
       "sourceType": "github",
-      "skillPath": "skills/how/SKILL.md",
-      "computedHash": "0ac9c6e5c4a04211256cb30dfda2a1ef2516a01c617d026a6ec397ce3a32206b",
-      "installMode": "copy"
+      "skillPath": "skills/maintain-verification-skill/SKILL.md",
+      "computedHash": "da23f8f80fb3730279fcc332fd9c30327f28889ee7bc71391b9dcaccf77f04bd"
     },
-    "incremental-implementation": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+    "ponytail": {
+      "source": "DietrichGebert/ponytail",
+      "ref": "ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10",
+      "commit": "ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10",
       "sourceType": "github",
-      "skillPath": "skills/incremental-implementation/SKILL.md",
-      "computedHash": "62ef93c6389f110af49ed4fad1fe2c27d3d9dd2d8fe0d0f6db089489c3d4aac3",
-      "installMode": "copy"
+      "skillPath": "skills/ponytail/SKILL.md",
+      "computedHash": "56d72677aca02689ac89bd48734e8c19b40ab86716d1257eaf5f1238b43cda6b"
     },
-    "planning-and-task-breakdown": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+    "research": {
+      "source": "mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
-      "skillPath": "skills/planning-and-task-breakdown/SKILL.md",
-      "computedHash": "e4ef8d478d672103693af0cab5a97a1914f776099ef0756c2a093d9ae061f024",
-      "installMode": "copy"
+      "skillPath": "skills/engineering/research/SKILL.md",
+      "computedHash": "7662666af51f8b1672ed7d88360d4b82656da21bb7b11c49e956eeb3036b85d5"
     },
-    "playwright-cli": {
-      "source": "microsoft/playwright-cli",
-      "ref": "c872a33cec77fa03c28fa7c6d1ad99d15d04ce42",
-      "commit": "c872a33cec77fa03c28fa7c6d1ad99d15d04ce42",
+    "setup-matt-pocock-skills": {
+      "source": "mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
-      "skillPath": "skills/playwright-cli/SKILL.md",
-      "computedHash": "54c3f1e47b2566ecc3a2c1515823f77f4609edfe8029351924311dafc0d2ba66",
-      "installMode": "copy"
-    },
-    "security-and-hardening": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/security-and-hardening/SKILL.md",
-      "computedHash": "9bfc78e1ee2e23f3d226f610d8ed8e0cf6fb4f7e90a44db0a41b636735a24767",
-      "installMode": "copy"
-    },
-    "spec-driven-development": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/spec-driven-development/SKILL.md",
-      "computedHash": "e560111a2823150a1be6d5a264cd3449dbdb9c67de011eea29204b4dee438e58",
-      "installMode": "copy"
-    },
-    "supabase-postgres-best-practices": {
-      "source": "supabase/agent-skills",
-      "ref": "c9be0e931b7930f7d02126d04774d904c381e7d7",
-      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
-      "sourceType": "github",
-      "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
-      "computedHash": "3eb972c2d7c818e544e35cc33ea8d7147d4d78ae08142ef40037b0fbac7a2505",
-      "installMode": "copy"
-    },
-    "supply-chain-risk-auditor": {
-      "source": "trailofbits/skills",
-      "ref": "149d7b21f4067765b82e67029730b42d228ef4b4",
-      "commit": "149d7b21f4067765b82e67029730b42d228ef4b4",
-      "sourceType": "github",
-      "skillPath": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md",
-      "computedHash": "8a15fe1e5cb75e02781bcf4d823a3ea32095c2e16c964c49182312f666aff866",
-      "installMode": "copy"
-    },
-    "systematic-debugging": {
-      "source": "obra/superpowers",
-      "ref": "22f0b463e7a5e579904dd6211a520321035526f7",
-      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
-      "sourceType": "github",
-      "skillPath": "skills/systematic-debugging/SKILL.md",
-      "computedHash": "79ff0583175346e39431b0dc713b223edd1bd7a7ea2b6c8b78b2fb9a3fed6782",
-      "installMode": "copy"
+      "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "computedHash": "9659e7025d4cf1c0a0b40ddff32ed4b8debb87a4b20d7a52ff89c506a638df69"
     },
     "tdd": {
       "source": "mattpocock/skills",
-      "ref": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
       "skillPath": "skills/engineering/tdd/SKILL.md",
-      "computedHash": "e3e0f78ff1c2d52ffefa0378baa1e80e129d359288cf9a56f4e59afcd2aac86c",
-      "installMode": "copy"
+      "computedHash": "e3e0f78ff1c2d52ffefa0378baa1e80e129d359288cf9a56f4e59afcd2aac86c"
     },
-    "teach": {
-      "source": "backnotprop/pstack",
-      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
+    "to-spec": {
+      "source": "mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "sourceType": "github",
-      "skillPath": "skills/teach/SKILL.md",
-      "computedHash": "1e6a792c0b5792eb8f0479bc3e7f78d93744c8952eb1f1d9433ea73ce2175a9e",
-      "installMode": "copy"
-    },
-    "terraform-test": {
-      "source": "hashicorp/agent-skills",
-      "ref": "5e30fa5c867ba6777c37e4206babfd08049c396f",
-      "commit": "5e30fa5c867ba6777c37e4206babfd08049c396f",
-      "sourceType": "github",
-      "skillPath": "plugins/terraform/skills/terraform-test/SKILL.md",
-      "computedHash": "8c66c1856320d5b74eb54b89f9c2553ff7e5733bfc08135edd922830287d0c0f",
-      "installMode": "copy"
-    },
-    "test-driven-development": {
-      "source": "addyosmani/agent-skills",
-      "ref": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
-      "sourceType": "github",
-      "skillPath": "skills/test-driven-development/SKILL.md",
-      "computedHash": "37cc05dea2a455d5d3ff252f14a7323ef378536603cce8cd2c758dc8fac790e6",
-      "installMode": "copy"
-    },
-    "unslop": {
-      "source": "backnotprop/pstack",
-      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "sourceType": "github",
-      "skillPath": "skills/unslop/SKILL.md",
-      "computedHash": "16b4c6af803d25028b40af775bc42a1c9ce85c741c7d117054c781f8e40d6f47",
-      "installMode": "copy"
-    },
-    "verification-before-completion": {
-      "source": "obra/superpowers",
-      "ref": "22f0b463e7a5e579904dd6211a520321035526f7",
-      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
-      "sourceType": "github",
-      "skillPath": "skills/verification-before-completion/SKILL.md",
-      "computedHash": "09b0e3a4689c1c38a3b8fc6ef57a1d4165aa33c0013d546dbde9dd348941a319",
-      "installMode": "copy"
-    },
-    "why": {
-      "source": "backnotprop/pstack",
-      "ref": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "commit": "9dd340887a043aa1da07a0d5c4e6918bbb3a02a0",
-      "sourceType": "github",
-      "skillPath": "skills/why/SKILL.md",
-      "computedHash": "74808a284f2e6116721fb43aeb99ab61179291c517f07fb3282107c5be0591c5",
-      "installMode": "copy"
+      "skillPath": "skills/engineering/to-spec/SKILL.md",
+      "computedHash": "eb934b5eda9523c7853a2741544bd4721ee1bea471f5a04f8397827f67bdbdda"
     }
   }
 }

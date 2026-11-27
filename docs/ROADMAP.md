@@ -14,7 +14,7 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 
 **Release decision.** The [first public release](#first-public-release) ships one preset in one AWS region. Fast ZIP downloads, effective download rate limiting, and a verified starter upgrade and rollback are release gates.
 
-**Maintaining the handoff.** At the start of a task, compare this section with the working tree and recent checks. When work changes the milestone status, record the observed result, the check or decision that supports it, and the next unfinished step here. Keep setup commands in the README and link detailed decisions or experiments from the relevant milestone.
+**Maintaining the handoff.** When resuming milestone work, compare this handoff with the working tree and recent checks. When work changes the milestone status, record the observed result, the check or decision that supports it, and the next unfinished step here. Keep setup commands in the README and link detailed decisions or experiments from the relevant milestone.
 
 ## Engineering practices
 
