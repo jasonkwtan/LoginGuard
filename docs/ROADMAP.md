@@ -16,10 +16,6 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 
 **Maintaining the handoff.** When resuming milestone work, compare this handoff with the working tree and recent checks. When work changes the milestone status, record the observed result, the check or decision that supports it, and the next unfinished step here. Keep setup commands in the README and link detailed decisions or experiments from the relevant milestone.
 
-## Engineering practices
-
-Use the [skills registry](AGENT_SKILLS.md) for a repeatable workflow from design and acceptance criteria through verification and review. Keep the developer's decisions, changes and evidence visible in each PR. The long-term software factory goal is to automate steps once the manual workflow is repeatable and has clear inputs, checks and approval points. Start with repository guidance, pinned skills and documented checks.
-
 ## Delivery milestones
 
 | Milestone | Build | Evidence to close it |

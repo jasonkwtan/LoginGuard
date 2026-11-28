@@ -66,7 +66,7 @@ SOFTWARE.
 
 [Original pstack project](https://github.com/cursor/plugins/tree/main/pstack)
 
-Bundled skills include `create-verification-skill`, `maintain-verification-skill`.
+Bundled skills include `correct`, `create-verification-skill`, `maintain-verification-skill`, `reflect`.
 
 [Source and license at the installed revision](https://github.com/backnotprop/pstack/blob/c81f1bf680803f9e3f0cade6adb62593f43fb61f/LICENSE)
 
