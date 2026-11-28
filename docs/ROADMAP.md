@@ -8,9 +8,9 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 
 **Foundation starting point.** The application baseline at `000543e` has the React/Vite landing page, Spring Boot context test and [PostgreSQL migration test](../backend/src/test/java/com/loginguard/loginguard/DatabaseMigrationTests.java).
 
-**Verification.** The 25 November checkout review confirmed placeholders under `.github/workflows/` and `infrastructure/`. A passing GitHub Actions run is pending.
+**Verification.** The [CI workflow](../.github/workflows/ci.yml) is in the working tree. It passed actionlint. The locked Java and Node versions installed into empty tool directories. From a clean source copy, Maven verified both tests against fresh PostgreSQL 17 with an empty dependency cache, and the frontend passed dependency installation, lint and the production build. The [CI research note](experiments/github-actions-ci.md) records the rationale for the workflow.
 
-**Next task.** Add and verify the first GitHub Actions workflow from a clean checkout. Run Maven verification against isolated PostgreSQL and run the React lint and production build checks with the locked toolchain. Record the passing run URL in the handoff. Then build and verify the health endpoint, deny-by-default security and Vite proxy before starting session login.
+**Next task.** Verify the first hosted GitHub Actions run and record its URL and tested commit in the handoff. Then build and verify the health endpoint, deny-by-default security and Vite proxy before starting session login.
 
 **Release decision.** The [first public release](#first-public-release) ships one preset in one AWS region. Fast ZIP downloads, effective download rate limiting, and a verified starter upgrade and rollback are release gates.
 
