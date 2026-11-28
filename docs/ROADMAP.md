@@ -8,9 +8,9 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 
 **Foundation starting point.** The application baseline at `000543e` has the React/Vite landing page, Spring Boot context test and [PostgreSQL migration test](../backend/src/test/java/com/loginguard/loginguard/DatabaseMigrationTests.java).
 
-**Verification.** The [CI workflow](../.github/workflows/ci.yml) is in the working tree. It passed actionlint. The locked Java and Node versions installed into empty tool directories. From a clean source copy, Maven verified both tests against fresh PostgreSQL 17 with an empty dependency cache, and the frontend passed dependency installation, lint and the production build. The [CI research note](experiments/github-actions-ci.md) records the rationale for the workflow.
+**Verification.** The [first hosted CI run](https://github.com/jasonkwtan/loginguard/actions/runs/46105341291) passed on 28 November 2026 against PR #10's proposed merge commit `e653e41`. Flyway applied V1 on fresh PostgreSQL 17, both Maven tests passed, and the frontend install, lint and production build succeeded. Local actionlint and clean toolchain and dependency installs also passed. See the [CI workflow](../.github/workflows/ci.yml) and its [research note](experiments/github-actions-ci.md).
 
-**Next task.** Verify the first hosted GitHub Actions run and record its URL and tested commit in the handoff. Then build and verify the health endpoint, deny-by-default security and Vite proxy before starting session login.
+**Next task.** After the workflow lands, confirm the CI run on `main`. Then build and verify the health endpoint, deny-by-default security and Vite proxy before starting session login.
 
 **Release decision.** The [first public release](#first-public-release) ships one preset in one AWS region. Fast ZIP downloads, effective download rate limiting, and a verified starter upgrade and rollback are release gates.
 
