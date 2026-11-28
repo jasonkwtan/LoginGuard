@@ -37,3 +37,7 @@ In your final response, list the checks you ran and explain any relevant check t
 ## Working tree and local data
 
 Preserve the existing `.env`, PostgreSQL volume, and unrelated working-tree edits. Leave commits and publishing to an explicit request.
+
+## Commits and pull requests
+
+Follow the [commit, pull request and merge conventions](CONTRIBUTING.md) when preparing commits or pull requests.
