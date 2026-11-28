@@ -8,17 +8,13 @@ Use this roadmap as the source of truth for scope, sequencing, decisions and the
 
 **Foundation starting point.** The application baseline at `000543e` has the React/Vite landing page, Spring Boot context test and [PostgreSQL migration test](../backend/src/test/java/com/loginguard/loginguard/DatabaseMigrationTests.java).
 
-**Verification.** The 25 November checkout review confirmed placeholders under `.github/workflows/` and `infrastructure/`. A passing GitHub Actions run is pending.
+**Verification.** The [first hosted CI run](https://github.com/jasonkwtan/loginguard/actions/runs/46105341291) passed on 28 November 2026 against PR #10's proposed merge commit `e653e41`. Flyway applied V1 on fresh PostgreSQL 17, both Maven tests passed, and the frontend install, lint and production build succeeded. Local actionlint and clean toolchain and dependency installs also passed. See the [CI workflow](../.github/workflows/ci.yml) and its [research note](experiments/github-actions-ci.md).
 
-**Next task.** Add and verify the first GitHub Actions workflow from a clean checkout. Run Maven verification against isolated PostgreSQL and run the React lint and production build checks with the locked toolchain. Record the passing run URL in the handoff. Then build and verify the health endpoint, deny-by-default security and Vite proxy before starting session login.
+**Next task.** After the workflow lands, confirm the CI run on `main`. Then build and verify the health endpoint, deny-by-default security and Vite proxy before starting session login.
 
 **Release decision.** The [first public release](#first-public-release) ships one preset in one AWS region. Fast ZIP downloads, effective download rate limiting, and a verified starter upgrade and rollback are release gates.
 
 **Maintaining the handoff.** When resuming milestone work, compare this handoff with the working tree and recent checks. When work changes the milestone status, record the observed result, the check or decision that supports it, and the next unfinished step here. Keep setup commands in the README and link detailed decisions or experiments from the relevant milestone.
-
-## Engineering practices
-
-Use the [skills registry](AGENT_SKILLS.md) for a repeatable workflow from design and acceptance criteria through verification and review. Keep the developer's decisions, changes and evidence visible in each PR. The long-term software factory goal is to automate steps once the manual workflow is repeatable and has clear inputs, checks and approval points. Start with repository guidance, pinned skills and documented checks.
 
 ## Delivery milestones
 

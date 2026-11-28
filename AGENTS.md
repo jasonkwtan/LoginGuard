@@ -10,7 +10,11 @@ Work from the repository root in WSL Bash. For a new checkout, follow [Getting s
 - Before changing sessions, protected routes, or permissions, read the [authorization contract](docs/ROADMAP.md#authorization-contract). Use it to choose checks for anonymous callers, owners, and other signed-in users as applicable.
 - For rate limiting, Redis, or AWS perimeter work, follow the [API protection exercise](docs/API-PROTECTION.md). Start with the local checks. Confirm the target account and environment before making authorized AWS changes.
 
-Choose a workflow from the [skills registry](docs/AGENT_SKILLS.md) when a task calls for one.
+## Project guidance for bundled skills
+
+- **`research`**. Lead with what the sources establish and why it matters to this project. Distinguish source claims, local observations, and recommendations. If you propose implementation work, say what has actually been verified.
+- **`reflect` in Codex**. Use the active conversation. For earlier turns, read only the active session's rollout under `~/.codex/sessions/YYYY/MM/DD/rollout-*.jsonl`. Confirm that the session ID matches and that the metadata's `payload.cwd` is this checkout. If you cannot identify the active rollout, work from the visible conversation and state that limit. [Upstream Codex guidance](https://github.com/backnotprop/pstack/blob/c81f1bf680803f9e3f0cade6adb62593f43fb61f/skills/poteto-mode/SKILL.md#harness)
+- **`correct`**. Create commits only when the user explicitly requests them.
 
 ## Verify the change
 

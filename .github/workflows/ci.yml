@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  MISE_LOCKED: '1'
+
+jobs:
+  backend:
+    name: Backend verification
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      POSTGRES_DB: loginguard
+      POSTGRES_USER: loginguard
+      POSTGRES_PASSWORD: loginguard-ci
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_DB: ${{ env.POSTGRES_DB }}
+          POSTGRES_USER: ${{ env.POSTGRES_USER }}
+          POSTGRES_PASSWORD: ${{ env.POSTGRES_PASSWORD }}
+        ports:
+          - 5432/tcp
+        options: >-
+          --health-cmd "pg_isready -h 127.0.0.1 -U loginguard -d loginguard"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: jdx/mise-action@924e7c586e33d7d4bae9c14e26c5d22e2beb6e78 # v5.3.0
+        with:
+          version: '2026.11.10'
+          cache: false
+      - name: Verify backend
+        env:
+          POSTGRES_PORT: ${{ job.services.postgres.ports['5432'] }}
+        run: |
+          mise exec -- ./backend/mvnw --version
+          mise exec -- ./backend/mvnw -f backend/pom.xml --batch-mode verify
+
+  frontend:
+    name: Frontend checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: jdx/mise-action@924e7c586e33d7d4bae9c14e26c5d22e2beb6e78 # v5.3.0
+        with:
+          version: '2026.11.10'
+          cache: false
+      - name: Install frontend dependencies
+        run: |
+          mise exec -- node --version
+          mise exec -- npm --version
+          mise exec -- npm --prefix frontend ci
+      - name: Lint frontend
+        run: mise exec -- npm --prefix frontend run lint
+      - name: Build frontend
+        run: mise exec -- npm --prefix frontend run build
